@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>貪吃蛇</title>
+	<meta charset="UTF-8">
+	<meta character = "UTF-8">
+	<title>LastProject</title>
+	<style type="text/css">
+	body{
+		background-color: cornflowerblue;
+	}
+	*{margin:0;}
+	.map{margin:10px auto;
+		height:600px;
+		width:900px;
+		background:#F4A460;
+		/*border:solid #fdfcff;*/
+		border-radius:1px;
+	}
+	.div1
+	{
+		border : 2px solid; 
+		width : 30%;
+		background-color : #F4A460;
+	}
+	</style>
+</head>
+
+<body id = "bg">
+	<center>
+		<input type = "button" id = "click" onclick = "javascript : start1()" value = "開始遊戲">
+		<input type = "button" onclick = "javascript : resetF()" value = "重新開始">
+		<br/>
+		<div class = "div1">
+			按下A鍵可以向斜上走，按下D鍵可以往斜下走
+		</div>
+		<p class = "div1">分數為: <span id = "grade"></span></p>
+		<div class="map">
+			<canvas id="canvas" height="600" width="900"></canvas>
+		</div>
+	</center>
+<script src="javascript/snake.js">
+
+</script>
+</body>
+</html>
